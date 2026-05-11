@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: rgb(42, 42, 101);
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li button {
+    background-color: rgb(42, 42, 101);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li button:hover {
+    background-color: darkblue;
+}
+.editor-dash button{
+    background-color: rgb(42, 42, 101); 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.editor-dash button:hover {
+    background-color: darkblue; 
+}
+.container {
+    margin-left: 400px;
+    padding: 30px;
+    width: 50%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+        background-color: rgb(42, 42, 101);
+        color: white;
+        font-weight: bold;
+        position: sticky;
+        top: 0;
+}
+.actions {
+    text-align: center;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.btn-disabled {
+    background-color:rgb(122, 120, 120);
+}
+.btn-disabled:hover {
+    background-color:rgb(122, 120, 120);
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.reviewer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reviewer-item {
+    display: flex;
+    align-items: center;
+}
+
+.btn-back {
+
+background-color: #1e3a8a;
+color: white;
+margin-bottom: 20px;
+margin-left: 30px;
+padding: 5px 10px;
+font-size: 0.9em;
+border: none;
+border-radius: 3px;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+}
+
+
+.btn-back:hover {
+    background-color: #5a6268;
+}

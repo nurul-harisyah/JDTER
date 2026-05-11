@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.main-links,
+.auth-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-links li,
+.auth-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.main-links a,
+.auth-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main-links a:hover,
+.auth-links a:hover {
+    background-color: burlywood;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: gray;
+    color: #1e3a8a;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: burlywood;
+    color: #fff;
+}
+
+.auth-links ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style-type: none;
+}
+
+.auth-links li:hover ul {
+    display: block;
+}
+
+.auth-links ul li a {
+    color: #1e3a8a;
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.auth-links ul li a:hover {
+    background-color: burlywood;
+    color: #fff;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.breadcrumb {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.archives-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.archives-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.archives-table th,
+.archives-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.archives-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+}
+
+.archives-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.read-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.read-btn:hover {
+    background-color: #0d2b6b;
+}
+
+.no-archives {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-top: 30px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-links li,
+    .auth-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        margin: 15px auto;
+    }
+
+    .archives-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+.article-title {
+    text-align: left !important;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+}

@@ -1,0 +1,72 @@
+/* tracking.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #2a2a65;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(42, 42, 101);
+    margin-bottom: 30px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: rgb(42, 42, 101);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: rgb(60, 60, 140);
+}
+
+.tracking-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tracking-list li {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background-color: #e6e7f4;
+    border-left: 6px solid rgb(42, 42, 101);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.tracking-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tracking-list li strong {
+    color: #1d1d3b;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.05em;
+}
+
+.tracking-list li p {
+    margin: 5px 0 0;
+    font-size: 0.95em;
+    color: #444;
+}

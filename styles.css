@@ -1,0 +1,1805 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; 
+    color: black;
+}
+
+
+ header {
+    background-color: #1e3a8a; /* Blue */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ nav {
+    margin-top: 10px;
+}
+
+.main-links,
+.auth-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-links li,
+.auth-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.main-links a,
+.auth-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main-links a:hover,
+.auth-links a:hover {
+    background-color:burlywood /* Gold */
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: gray; 
+    color: #1e3a8a; /* Blue */
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: burlywood; /* Blue */
+    color: #fff;
+}
+
+.auth-links ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style-type: none;
+}
+
+.auth-links li:hover ul {
+    display: block;
+}
+
+.auth-links ul li a {
+    color: #1e3a8a;
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.auth-links ul li a:hover {
+    background-color: burlywood; /* Gold */
+    color: #fff;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.index-page h2 {
+    font-size: 32px;
+    color: #1e3a8a; /* Blue */
+    margin-bottom: 10px;
+}
+
+.index-page p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-links li,
+    .auth-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+/* Register Page Styles */
+.register-page {
+    font-family: Arial, sans-serif;
+    background-color: rgb(38, 38, 128);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Align items from the top */
+    min-height: 100vh;  /* Allow page to grow based on content */
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Main container for the Register page */
+.register-page .register-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.register-page.register-container h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;  /* Give some space above the header */
+}
+
+.register-page h5 {
+    color: #333;
+    margin-top: 20px;  /* Give some space above the header */
+}
+
+/* Input fields and buttons */
+.register-page input[type="text"],
+.register-page input[type="email"],
+.register-page input[type="password"],
+.register-page select,
+.register-page button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button style */
+.register-page button {
+    background-color: rgb(42, 42, 101);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.register-page button:hover {
+    background-color: rgb(42, 42, 101);
+}
+
+/* Footer style */
+.register-page footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Login Page Styles */
+.login-page {
+    font-family: Arial, sans-serif;
+    background-color: rgb(38, 38, 128);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Main container for the Login page */
+.login-page .login-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.login-page h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Input fields and buttons */
+.login-page input[type="email"],
+.login-page input[type="password"],
+.login-page button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button style */
+.login-page button {
+    background-color: rgb(42, 42, 101);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.login-page button:hover {
+    background-color: rgb(42, 42, 101);
+}
+
+/* Error message style */
+.login-page .error {
+    color: red;
+    text-align: center;
+}
+
+/* Footer style */
+.login-page footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-page h5 {
+    color: #731919;
+    margin-top: 20px;  /* Give some space above the header */
+}
+
+/* Dashboard Page Styles */
+.dashboard-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.dashboard-page .sidebar {
+    width: 300px;
+    background-color:rgb(42, 42, 101);
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.dashboard-page .sidebar-header {
+    padding: 10px 20px;
+}
+
+.dashboard-page .sidebar a {
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.dashboard-page .sidebar a:hover {
+    background-color: rgb(36, 36, 115);
+}
+
+.dashboard-page .sidebar ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.dashboard-page .sidebar ul li {
+    padding: 5px 0;
+}
+
+.dashboard-page .sidebar ul li a {
+    padding: 5px 20px;
+    display: block;
+}
+
+.dashboard-page .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+.dashboard-page h1 {
+    text-align: center;
+    color: #333;
+}
+
+.dashboard-page .section {
+    display: none;
+}
+
+.dashboard-page .section.active {
+    display: block;
+}
+
+/* For error message */
+.dashboard-page .error {
+    color: red;
+    text-align: center;
+}
+
+
+.dashboard-page h4 {
+    margin: 0;  /* Remove any margin that could cause offset */
+    text-align: left;  /* Align text to the left */
+    color: #f3f1f1;
+    margin-bottom: 20px;  /* Add space below the h4 */
+}
+
+.dashboard-page .sidebar-header h2 {
+    
+    color: white;  /* Make sure the text color is white (if not already) */
+    margin: 0;  /* Remove any default margin */
+    padding: 10px 0;  /* Add some padding if needed */
+}
+
+/* General Styles for start.php */
+.start-page body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Dashboard container */
+.start-page .dashboard {
+    display: flex; /* Enables side by side layout */
+    width: 100%;
+    height: 100vh; /* Full height for the page */
+}
+
+/* Sidebar */
+.start-page .sidebar {
+    width: 300px;
+    background-color: rgb(42, 42, 101);
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+}
+
+/* Sidebar Header */
+.start-page .sidebar-header h2 {
+    font-size: 22px;
+    
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.start-page .sidebar-header h4 {
+   
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #dcdcdc;
+}
+
+/* Sidebar Links */
+.start-page .sidebar a {
+    display: block;
+    color: #dcdcdc;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.start-page .sidebar a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Content area */
+.start-page .content {
+    flex: 1; /* Content takes up the remaining space beside the sidebar */
+    padding: 20px 40px; /* Added padding for spacing */
+    box-sizing: border-box;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+/* Form styling */
+.start-page form {
+    max-width: 700px;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 30px; /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Added margin at the top */
+}
+
+/* Add space above "Submission Requirements" section */
+.start-page form h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Label and Input styling */
+.start-page form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.start-page form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.start-page form textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.start-page form button {
+    padding: 12px 20px;
+    background-color: #004085;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.start-page form button:hover {
+    background-color: #0056b3;
+}
+
+.start-page form button[type="button"] {
+    background-color: #f44336;
+}
+
+.start-page form button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    /* For tablets and below */
+    .start-page .dashboard {
+        flex-direction: column;
+    }
+
+    .start-page .sidebar {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    .start-page .content {
+        padding: 10px;
+    }
+
+    .start-page form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .start-page .sidebar-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .start-page .sidebar-header h4 {
+        font-size: 0.875rem;
+    }
+
+    .start-page .sidebar a {
+        font-size: 0.875rem;
+    }
+
+    .start-page form button {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For smaller mobile screens */
+    .start-page body {
+        flex-direction: column;
+    }
+
+    .start-page .sidebar {
+        width: 100%;
+        padding: 5px;
+        background-color: rgb(42, 42, 101);
+        box-shadow: none;
+    }
+
+    .start-page .content {
+        padding: 10px;
+    }
+
+    .start-page .sidebar a {
+        font-size: 0.75rem;
+    }
+
+    .start-page form {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .start-page form button {
+        padding: 10px 15px;
+        font-size: 0.75rem;
+    }
+
+    .start-page form h3 {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* General Styles for upload_submission.php */
+.upload-page body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Dashboard container */
+.upload-page .dashboard {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Sidebar */
+.upload-page .sidebar {
+    width: 300px;
+    background-color: rgb(42, 42, 101);
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+/* Sidebar Header */
+.upload-page .sidebar-header h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.upload-page .sidebar-header h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #dcdcdc;
+}
+
+/* Sidebar Links */
+.upload-page .sidebar a {
+    display: block;
+    color: #dcdcdc;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.upload-page .sidebar a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Content area */
+.upload-page .content {
+    flex: 1; /* Content takes up the remaining space beside the sidebar */
+    padding: 20px 40px; /* Added padding for spacing */
+    box-sizing: border-box;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+/* Form styling */
+.upload-page form {
+    max-width: 700px;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 30px; /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Added margin at the top */
+}
+
+/* Form Title */
+.upload-page form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Label and Input styling */
+.upload-page form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.upload-page form select,
+.upload-page form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.upload-page form button {
+    padding: 12px 20px;
+    background-color: #004085;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-page form button:hover {
+    background-color: #0056b3;
+}
+
+.upload-page form button[type="button"] {
+    background-color: #f44336;
+}
+
+.upload-page form button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+
+/* Media Queries for smaller screen sizes */
+@media (max-width: 1200px) {
+    /* On medium screens (tablets), adjust sidebar width and content layout */
+    .upload-page .sidebar {
+        width: 250px;
+    }
+    .upload-page .content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For tablets and below (portrait mode), adjust layout */
+    .upload-page .dashboard {
+        flex-direction: column; /* Stack sidebar and content vertically */
+    }
+
+    .upload-page .sidebar {
+        width: 100%;
+        height: auto;
+        box-shadow: none; /* Remove shadow for mobile view */
+        padding: 10px;
+    }
+
+    .upload-page .content {
+        padding: 15px;
+    }
+
+    .upload-page form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile phones, adjust layout for smaller screens */
+    .upload-page .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .upload-page .content {
+        padding: 10px;
+    }
+
+    .upload-page form {
+        padding: 15px;
+    }
+
+    .upload-page form h1 {
+        font-size: 20px;
+    }
+
+    .upload-page form input[type="file"],
+    .upload-page form select {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .upload-page form button {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+/* General Styles for metadata-page */
+.metadata-page body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Dashboard container */
+.metadata-page .dashboard {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Sidebar */
+.metadata-page .sidebar {
+    width: 300px;
+    background-color: rgb(42, 42, 101);
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+/* Sidebar Header */
+.metadata-page .sidebar-header h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.metadata-page .sidebar-header h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #dcdcdc;
+}
+
+/* Sidebar Links */
+.metadata-page .sidebar a {
+    display: block;
+    color: #dcdcdc;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.metadata-page .sidebar a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Content area */
+.metadata-page .content {
+    flex: 1; /* Content takes up the remaining space beside the sidebar */
+    padding: 20px 40px; /* Added padding for spacing */
+    box-sizing: border-box;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+/* Form styling */
+.metadata-page form {
+    max-width: 700px;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 30px; /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Added margin at the top */
+}
+
+/* Form Title */
+.metadata-page form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Label and Input styling */
+.metadata-page form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.metadata-page form select,
+.metadata-page form input[type="file"],
+.metadata-page form input[type="text"],
+.metadata-page form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+.metadata-page textarea#abstract {
+    width: 100%;
+    height: 150px;  /* adjust this to make it taller */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+
+.metadata-page form button {
+    padding: 12px 20px;
+    background-color: #004085;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.metadata-page form button:hover {
+    background-color: #0056b3;
+}
+
+.metadata-page form button[type="cbutton"] {
+    background-color: #004085;
+}
+
+.metadata-page form button[type="cbutton"]:hover {
+    background-color: #0056b3;
+}
+
+.metadata-page form button[type="button"] {
+    background-color: #f44336;
+}
+
+.metadata-page form button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Table Styling */
+.metadata-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.metadata-page table th,
+.metadata-page table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.metadata-page table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.metadata-page .add-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.metadata-page .add-button:hover {
+    background-color: #218838;
+}
+
+
+.metadata-page input[name="contributor_name[]"],
+
+.metadata-page input[name="contributor_role[]"] {
+    width: 150px !important;
+    max-width: 150px !important;
+    box-sizing: border-box;
+}
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .metadata-page .dashboard {
+        flex-direction: column; /* Stack the sidebar and content on smaller screens */
+    }
+
+    .metadata-page .sidebar {
+        width: 100%; /* Sidebar takes full width on small screens */
+        padding: 15px;
+    }
+
+    .metadata-page .content {
+        padding: 20px; /* Adjust padding for small screens */
+    }
+
+    .metadata-page form {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .metadata-page form h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .metadata-page .dashboard {
+        flex-direction: column;
+    }
+
+    .metadata-page .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .metadata-page .content {
+        padding: 15px; /* Adjust content padding */
+    }
+
+    .metadata-page form {
+        padding: 15px; /* Adjust form padding */
+    }
+
+    .metadata-page form h1 {
+        font-size: 18px; /* Adjust heading font size */
+    }
+
+    .metadata-page form button {
+        padding: 10px 15px; /* Adjust button size */
+    }
+
+    .metadata-page table th,
+    .metadata-page table td {
+        font-size: 12px; /* Adjust table font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .metadata-page .dashboard {
+        flex-direction: column;
+    }
+
+    .metadata-page .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .metadata-page .content {
+        padding: 10px; /* Adjust content padding */
+    }
+
+    .metadata-page form {
+        padding: 10px; /* Adjust form padding */
+    }
+
+    .metadata-page form h1 {
+        font-size: 16px; /* Adjust heading font size */
+    }
+
+    .metadata-page form button {
+        padding: 8px 12px; /* Adjust button size */
+    }
+
+    .metadata-page table th,
+    .metadata-page table td {
+        font-size: 10px; /* Adjust table font size */
+    }
+}
+   
+/* General Styles for confirmation.php */
+.confirmation-page body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Dashboard container */
+.confirmation-page .dashboard {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Sidebar */
+.confirmation-page .sidebar {
+    width: 300px;
+    background-color: rgb(42, 42, 101);
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+/* Sidebar Header */
+.confirmation-page .sidebar-header h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.confirmation-page .sidebar-header h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #dcdcdc;
+}
+
+/* Sidebar Links */
+.confirmation-page .sidebar a {
+    display: block;
+    color: #dcdcdc;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.confirmation-page .sidebar a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Content area */
+.confirmation-page .content {
+    flex: 1; /* Content takes up the remaining space beside the sidebar */
+    padding: 20px 40px; /* Added padding for spacing */
+    box-sizing: border-box;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+/* Form styling */
+.confirmation-page form {
+    max-width: 700px;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 30px; /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Added margin at the top */
+}
+
+/* Form Title */
+.confirmation-page form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Label and Input styling */
+.confirmation-page form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.confirmation-page form select,
+.confirmation-page form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.confirmation-page form button {
+    padding: 12px 20px;
+    background-color: #004085;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-page form button:hover {
+    background-color: #0056b3;
+}
+
+.confirmation-page form button[type="button"] {
+    background-color: #f44336;
+}
+
+.confirmation-page form button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1200px) {
+    .confirmation-page .dashboard {
+        flex-direction: column;
+    }
+
+    .confirmation-page .sidebar {
+        width: 100%;
+        height: auto; /* Allow sidebar to stack on top */
+        position: relative; /* Remove fixed position */
+    }
+
+    .confirmation-page .content {
+        padding: 20px;
+    }
+
+    .confirmation-page form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .confirmation-page .sidebar {
+        width: 100%;
+        height: auto; /* Sidebar takes full width and becomes vertical */
+        padding: 15px;
+    }
+
+    .confirmation-page .content {
+        padding: 15px;
+    }
+
+    .confirmation-page form {
+        padding: 15px;
+    }
+
+    .confirmation-page form h1 {
+        font-size: 20px;
+    }
+
+    .confirmation-page form button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .confirmation-page .sidebar-header h2 {
+        font-size: 20px;
+    }
+
+    .confirmation-page .sidebar-header h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .confirmation-page .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .confirmation-page .content {
+        padding: 10px;
+    }
+
+    .confirmation-page form {
+        padding: 10px;
+    }
+
+    .confirmation-page form h1 {
+        font-size: 18px;
+    }
+
+    .confirmation-page form label {
+        font-size: 12px;
+    }
+
+    .confirmation-page form button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+.review-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.review-page .reviewer-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-page h2 {
+    margin-bottom: 20px;
+}
+
+.review-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-page label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.review-page input[type="text"], 
+.review-page select, 
+.review-page input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.review-page button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-page button:hover {
+    background-color: #ccc;
+}
+
+.review-page p.success {
+    color: green;
+    font-size: 14px;
+}
+
+.review-page p.error {
+    color: red;
+    font-size: 14px;
+}
+
+/* General Styles for myProfile.php */
+.profileMy-page body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Dashboard container */
+.profileMy-page .dashboard {
+    display: flex; /* Enables side by side layout */
+    width: 100%;
+    height: 100vh; /* Full height for the page */
+}
+
+/* Sidebar */
+.profileMy-page .sidebar {
+    width: 300px; /* Fixed width for sidebar */
+    background-color: rgb(42, 42, 101);
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+}
+
+/* Sidebar Header */
+.profileMy-page .sidebar-header h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.profileMy-page .sidebar-header h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #dcdcdc;
+}
+
+/* Sidebar Links */
+.profileMy-page .sidebar a {
+    display: block;
+    color: #dcdcdc;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profileMy-page .sidebar a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Content area */
+.profileMy-page .content {
+    flex: 1; /* Content takes up the remaining space beside the sidebar */
+    padding: 40px; /* Increased padding to create space around the content */
+    box-sizing: border-box;
+    background-color: #ffffff;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: flex-start; /* Keeps the content aligned to the top */
+}
+
+/* Profile container */
+.profileMy-page .profile-container {
+    max-width: 700px;
+    width: 100%;
+    margin-left: 40px; /* Added margin to push it further from the sidebar */
+    margin-top: 40px; /* Added margin to push it away from the top */
+    margin-bottom: 40px; /* Added margin to push it away from the bottom */
+}
+
+/* Profile Table Styling */
+.profileMy-page .profile-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Ensures the table layout is fixed and prevents overflow */
+}
+
+.profileMy-page .profile-container table th,
+.profileMy-page .profile-container table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Ensure content wraps inside cells */
+}
+
+.profileMy-page .profile-container table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+
+/* Add space between Edit and Save buttons vertically */
+.profileMy-page  .profile-container td button {
+    margin-bottom: 5px; /* Space below the Edit button */
+}
+
+.profileMy-page  .profile-container td button[type="submit"] {
+    margin-top: 5px; /* Space above the Save button */
+}
+
+/* Form Styling for Profile Edit */
+.profileMy-page form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure the form uses full available width */
+    max-width: 700px; /* Limit the form's width */
+    margin-top: 20px;
+}
+
+.profileMy-page form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Profile Input Fields */
+.profileMy-page form input[type="text"],
+.profileMy-page form input[type="email"],
+.profileMy-page form select {
+    width: 100%; /* Ensure the input fields are 100% width of the table cell */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+/* Ensuring buttons don't overflow in table cells */
+.profileMy-page form button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #004085;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profileMy-page form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .profileMy-page .sidebar {
+        width: 250px;
+    }
+    .profileMy-page .profile-container {
+        margin-left: 20px; /* Decrease left margin */
+    }
+}
+
+@media (max-width: 992px) {
+    .profileMy-page .sidebar {
+        width: 200px; /* Decrease sidebar width */
+        padding: 15px;
+    }
+    .profileMy-page .content {
+        padding: 20px;
+    }
+    .profileMy-page .profile-container {
+        margin-left: 10px; /* Decrease margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .profileMy-page .sidebar {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none; /* Remove shadow for mobile */
+        position: absolute; /* Make sidebar fixed at the top for mobile */
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: block; /* Make sure the sidebar is visible */
+    }
+    .profileMy-page .content {
+        padding: 10px;
+        margin-top: 60px; /* Add margin for content to avoid overlap */
+    }
+    .profileMy-page .dashboard {
+        flex-direction: column; /* Stack the sidebar and content vertically */
+    }
+    .profileMy-page .profile-container {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%; /* Allow the profile container to fill screen */
+    }
+    .profileMy-page form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profileMy-page .sidebar {
+        width: 100%; /* Sidebar takes full width */
+        padding: 10px;
+        position: static; /* Make sidebar behave like normal flow */
+        box-shadow: none;
+    }
+    .profileMy-page .content {
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .profileMy-page .profile-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .profileMy-page form {
+        padding: 15px;
+    }
+}
+
+
+/* Forgot Password Page Styles */
+.forgot-page {
+    font-family: Arial, sans-serif;
+    background-color: rgb(38, 38, 128);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Main container for the Forgot Password page */
+.forgot-page .forgot-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.forgot-page h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Input fields and buttons */
+.forgot-page input[type="email"],
+.forgot-page input[type="text"],
+.forgot-page button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button style */
+.forgot-page button {
+    background-color: rgb(42, 42, 101);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.forgot-page button:hover {
+    background-color: rgb(42, 42, 101);
+}
+
+/* General message styles */
+.forgot-page .message {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Success message style */
+.forgot-page .message.success {
+    color: #fff;
+    background-color: #28a745; /* Green for success */
+    border: 1px solid #218838;
+}
+
+/* Error message style */
+.forgot-page .message.error {
+    color: #fff;
+    background-color: #dc3545; /* Red for error */
+    border: 1px solid #c82333;
+}
+
+/* Footer style */
+.forgot-page footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-page h5 {
+    color: #731919;
+    margin-top: 20px;  /* Give some space above the header */
+}
+
+/* Reset Password Page Styles */
+.reset-page {
+    font-family: Arial, sans-serif;
+    background-color: rgb(38, 38, 128);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Main container for the Reset Password page */
+.reset-page .reset-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.reset-page h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Input fields and buttons */
+.reset-page input[type="password"],
+.reset-page button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button style */
+.reset-page button {
+    background-color: rgb(42, 42, 101);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.reset-page button:hover {
+    background-color: rgb(42, 42, 101);
+}
+
+/* General message styles */
+.reset-page .message {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Success message style */
+.reset-page .message.success {
+    color: #fff;
+    background-color: #28a745; /* Green for success */
+    border: 1px solid #218838;
+}
+
+/* Error message style */
+.reset-page .message.error {
+    color: #fff;
+    background-color: #dc3545; /* Red for error */
+    border: 1px solid #c82333;
+}
+
+/* Footer style */
+.reset-page footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reset-page h5 {
+    color: #731919;
+    margin-top: 20px;  /* Give some space above the header */
+}
+

@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: rgb(42, 42, 101);
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li button {
+    background-color: rgb(42, 42, 101);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li button:hover {
+    background-color: darkblue;
+}
+.editor-dash button{
+    background-color: rgb(42, 42, 101); 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.editor-dash button:hover {
+    background-color: darkblue; 
+}
+
+.main-content {
+    margin-left: 400px;
+    padding: 30px;
+    width: 50%;
+}
+h2 {
+    color: rgb(42, 42, 101);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Message Styles */
+.success {
+    color: #28a745;
+    background-color: #e6ffe6;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #28a745;
+}
+
+.error {
+    color: #dc3545;
+    background-color: #ffebeb;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #dc3545;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgb(42, 42, 101);
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Link Styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.publish-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.publish-button:hover {
+    background-color: #218838;
+}
+
+/* Status Styles */
+.published-status {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.not-published-status {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Form Styles */
+form {
+    margin: 0;
+}
+
+/* Empty Table Message */
+td[colspan] {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Action Column */
+td:last-child {
+    white-space: nowrap;
+}

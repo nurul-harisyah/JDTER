@@ -1,0 +1,297 @@
+
+/* Status Filter Form */
+form {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Table Styling (Payment Interface Look) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Header Row Styling */
+th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Row Styling */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Download Icon Styling */
+.center-icon {
+    text-align: center;
+}
+
+.center-icon i {
+    font-size: 20px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.center-icon i:hover {
+    color: #0056b3;
+}
+
+/* Status Column Styling */
+td:nth-child(5) {
+    font-weight: bold;
+    color: #333;
+}
+
+td:nth-child(5) .status-under-review {
+    color: #ff9900;
+}
+
+td:nth-child(5) .status-accept {
+    color: #28a745;
+}
+
+td:nth-child(5) .status-reject {
+    color: #dc3545;
+}
+
+td:nth-child(5) .status-minor-revision,
+td:nth-child(5) .status-major-revision {
+    color: #ffc107;
+}
+
+/* Action Buttons Styling */
+.actions form {
+    display: inline;
+}
+
+.actions button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+.actions .delete-btn {
+    background-color: #dc3545;
+}
+
+.actions .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.actions .btn-resubmit {
+    background-color: #28a745;
+}
+
+.actions .btn-resubmit:hover {
+    background-color: #218838;
+}
+
+/* No Submissions Found Text */
+.payment-table .no-submissions {
+    color: #888;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Status Dropdown Styling */
+select {
+    font-size: 14px;
+    padding: 8px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+
+/* General Styles for my_submission.php */
+ body {
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Dashboard Layout */
+.my-submission-page .dashboard {
+    display: flex; /* Enables side by side layout */
+    width: 100%;
+    height: 100vh; /* Full height for the page */
+}
+
+/* Sidebar */
+.my-submission-page .sidebar {
+    width: 300px;
+    background-color: rgb(42, 42, 101);
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+/* Sidebar Links */
+.my-submission-page .sidebar a {
+    display: block;
+    color: #dcdcdc;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.my-submission-page .sidebar a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
+
+
+/* Page Content Section */
+.my-submission-page .section {
+    flex: 1;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    overflow-y: auto; /* Make only the content scrollable */
+    margin-left: 0px;
+}
+
+/* Submission Container */
+.my-submission-page .submission-container {
+    width: fit-content;
+    margin: 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Filter Dropdown */
+.my-submission-page form select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+
+
+/* Table Wrapper */
+.my-submission-page .table-wrapper {
+    width:100%;
+    overflow-x: auto;
+}
+
+/* Table Styling */
+.my-submission-page .submission-table {
+    width: 100%;
+    font-size: 13px; /* fallback in case it's not inherited */
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Headers and Cells */
+.my-submission-page .submission-table th,
+.my-submission-page .submission-table td {
+    font-size: 10px; /* smaller font */
+    padding: 8px 10px; /* reduce cell spacing */
+    text-align: center;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+/* Table Header */
+.my-submission-page .submission-table th {
+    background-color: rgb(42, 42, 101); /* Dark blue background */
+    color: #fff; /* White text */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Table Data Cells */
+.my-submission-page .submission-table td {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Zebra Striping */
+.my-submission-page .submission-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+.my-submission-page .submission-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Sidebar Header */
+.my-submission-page .sidebar-header h2 {
+    font-size: 22px;    
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
