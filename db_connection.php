@@ -1,9 +1,9 @@
 <?php
 // Database connection settings
-$host = 'sql303.infinityfree.com'; // Database host
-$dbname = 'if0_38070204_journal'; // Replace with your actual database name
-$username = 'if0_38070204'; // Database username
-$password = 'Ye65Y0FtgUxFh'; // Database password
+$host = ''; // Database host
+$dbname = ''; // Replace with your actual database name
+$username = ''; // Database username
+$password = ''; // Database password
 
 try {
     // Create a new PDO instance
